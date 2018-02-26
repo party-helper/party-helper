@@ -1,0 +1,29 @@
+{
+  "name": "party-hepler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prettier": "node --harmony scripts/prettier write-changed",
+    "prettier-all": "node --harmony scripts/prettier write",
+    "precommit": "npm run prettier && npm run lint",
+    "commitmsg": "validate-commit-msg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.shensz.local:live/course_wx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "glob": "^7.1.2",
+    "husky": "^0.14.3",
+    "prettier": "^1.9.2",
+    "validate-commit-msg": "^2.14.0"
+  }
+}

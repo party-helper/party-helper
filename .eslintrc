@@ -1,0 +1,30 @@
+// **注意**
+// 临时禁用规则请使用 `eslint-disable-line` 注释
+// 如需修改此文件中的规则请在团队 Issue 中发起公投
+{
+  "extends": [
+    "airbnb-base",
+    "prettier" // 必须位于最后，覆盖代码风格相关 rules
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    // 为便于代码阅读，允许函数晚于使用定义
+    "no-use-before-define": ["error", { "functions": false }],
+    "strict": 0,
+    "no-underscore-dangle": 0,
+    "radix": 0,
+    "no-restricted-syntax": 0,
+    "no-await-in-loop": 0,
+    "no-template-curly-in-string": 0,
+    "no-plusplus": 0
+  },
+  "globals": {
+    "wx": false,
+    "App": false,
+    "Page": false,
+    "getApp": false,
+    "Component": false
+  }
+}
